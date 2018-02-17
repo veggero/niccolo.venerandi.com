@@ -1,0 +1,42 @@
+html {
+    background-color: black;
+}
+
+p, h1, h3, a, code, pre {
+    color: white;
+}
+
+pre {
+    text-align: left;
+}
+
+a:hover {
+    background-size: 100% 100%;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+}
+
+a:hover {
+    background-image: url("link.gif");
+}
+
+span {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+#quote {
+    color: #111111;
+    background-image: none;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
