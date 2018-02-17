@@ -1,59 +1,42 @@
 <html>
-	<head>
-		<title>Nylo.</title>
-		<style>
-			body{
-				width: 97%; 
-				position: relative;
-				height: 97%; 
-				background: linear-gradient(270deg, #0a1b2a, #0e0a2a, #1e0a2a);
-				background-size: 600% 600%;
-
-				-webkit-animation: AnimationName 30s ease infinite;
-				-moz-animation: AnimationName 30s ease infinite;
-				animation: AnimationName 30s ease infinite;
-
-			}
-
-			@-webkit-keyframes AnimationName {
-				0%{background-position:0% 50%}
-				50%{background-position:100% 50%}
-				100%{background-position:0% 50%}
-			}
-			@-moz-keyframes AnimationName {
-				0%{background-position:0% 50%}
-				50%{background-position:100% 50%}
-				100%{background-position:0% 50%}
-			}
-			@keyframes AnimationName {
-				0%{background-position:0% 50%}
-				50%{background-position:100% 50%}
-				100%{background-position:0% 50%}
-			}
-			
-			@keyframes opacity{
-				0%{opacity:0.6}
-				20%{opacity:1}
-				40%{opacity:0.7}
-				60%{opacity:0.9}
-				80%{opacity:0.8}
-				100%{opacity:0.6}
-			}
-			
-			#image{
-				margin: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-right: -50%;
-				transform: translate(-50%, -50%);
-				animation: opacity 10s ease infinite;
-			}
-			
-		</style>
-	</head>
-	<body>
-		<img id="image" height="100" src="bloody_nylo_logo_dev.png">
-</script>
-	</body>
+    <head>
+        <link rel=stylesheet href=style.css>
+        <title>veggero</title>
+    </head>
+    <body>
+        <center>
+        
+            <p id=quote></p>
+            <h1 id=title>veggero</h1>
+            <p id=surname></p>
+            
+            <span>
+                <h3>Things I like:</h3>
+                <p>
+                    - <a href=http://humanetech.com target=blank>Humane Tech</a><br>
+                    - <a href=http://kde.com target=blank>Kde</a><br>
+                    - <a href=http://fairphone.com target=blank>FairPhone</a><br>
+                    - <a href=http://puri.sm target=blank>Purism</a>
+                </p>
+            </span>
+            
+            <span>
+                <h3>Things I do:</h3>
+                <p>
+                    - <a href=coder.html target=blank>Study</a><br>
+                    - <a href=nylo/index.html >Nylo</a><br>
+                    - <a href=shittypoems target=blank>Shitty Poems & Fictions</a><br>
+                </p>
+                
+                <h3>What you can do:</h3>
+                <p>
+                    - <a href="mailto:niccolo.venerandi@gmail.com?subject=I Hate You.&Body=Tu e la tua stirpe.">
+                        Hit me up
+                    </a><br>
+                </p>
+            </span>
+            
+        </center>
+        <script type=text/javascript src=logic.js></script>
+    </body>
 </html>
