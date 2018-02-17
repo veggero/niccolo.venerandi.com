@@ -42,6 +42,20 @@
                 <code>(int y: x + 3, int z: 0)(int x: 4, y -> height, <-z)</code>
             </span>
             
+            <span>
+                <h3>Types</h3>
+<pre>int a: 3,
+str b: "hello",
+float c: 4.12,
+struct d: (int x),
+fun e: (int x, int y: x + 1),
+dict f: (a: 1, b: 2),
+
+list int g: [1, 2, 3],
+dict int h: (a: 1, b: 2)
+</pre>
+            </span>
+            
             <br>
             
             <span>
@@ -96,6 +110,8 @@
                 Data should only be modified by external functions.</p>
             </span>
             
+            <br>
+            
             <span>
                 <h3>Making things a little easier</h3>
                 <p>Calling a function with values, without specifing<br>
@@ -116,6 +132,8 @@
                 (int x, int _self: x+10)(int x: 3) = 13</code>
                 <p>So, this is a simple sum:</p>
                 <code>(int, _self: int+1)(3) = 4</code>
+                <p>Also, you can semplify proprieties getting:</p>
+                <code>(x: 3)(<-x) = (x: 3).x</code>
                 
             </span>
             
@@ -137,6 +155,68 @@
         print(y)
     }
 )</pre>
+                <h3>Meta Blocks</h3>
+                <p>Meta Blocks also has information<br> about the following code.<br>
+                Syntax is {structure | code}</p>
+                <code>{int element | print("Hello")}</code>
+                <p>In Meta Blocks, the code will become<br> <var>_self</var> of the structure.</p>
+                <code>{int x | x + 1} = (int x, _self: {x + 1})</code>
+                <p>There are two ways of using Meta Blocks.<br>
+                First, it's useful to create functions:<p>
+                <code>{int x | x + 1}(x: 4) = 5</code>
+                <p>Also, it can be used with iter, if, while, etc:</p>
+                <code>if {2<3 | print("yay")}</code>
+            </span>
+            
+            <br>
+            
+            <span>
+                <h3>Flow Control</h3>
+                <p>if and while:</p>
+                <code>if {2>3 | print("yay")}<br>
+                while {2<3 | print("yay")}</code>
+                <p>iterating on lists and repeating:</p>
+                <code>iter {[1, 2, 3], n | print(n)}<br>
+                repeat {3 | print("yay")}</code>
+                <p>repeat and iter will set _self to<br>
+                the value of their code:</p>
+                <code>iter {[1, 2, 3], n | n + 1} =\<br>
+                [2, 3, 4]<br>
+                repeat {5 | 3} = [3, 3, 3, 3, 3]</code>
+            </span>
+            
+            <span>
+                <h3>Curried Functions</h3>
+                <p>You don't have to provide all the<br>
+                arguments to a function with the<br>
+                first call.<br>
+                Let's take a general function<br> 
+                to sum two integers:</p>
+                <code>sum: {int, int | int[0] + int[0]}<br>
+                sum(1, 2) = 3</code>
+                <p>What happens if we provide only<br>
+                one integer?</p>
+                <code>sum_to_two: sum(2)<br>
+                sum_to_two(7) = 9<br>
+                sum_to_two(4) = 6</code>
+                <p>This works also with args/classes:</p>
+                <code>point: (int x, int y)<br>
+                x_axis: point(y: 0)<br>
+                y_axis: point(x: 0)<br>
+                c: y_axis(y: 5)</code>
+            </span>
+            
+            <span>
+                <h3>Conditions</h3>
+                <p>You can also add conditions to<br>
+                types:</p>
+                <code>(int[<3] x) (0) // okay<br>
+                (int[<3] x) (4) // error</code>
+                <p>You can add conditions to<br>
+                other elements:</p>
+                <code>(list [list.length > 5]<br>
+                int [int % 3 = 0]<br>
+                x)</code>
             </span>
             
         </center>
