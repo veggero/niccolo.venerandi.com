@@ -12,7 +12,7 @@
 			<project>
 				<name>Nylo</name>
 				<logo href="nylo_logo.png"/>
-				<github>github.com/veggero/nylo</github>
+				<github href="github.com/veggero/nylo"/>
 				<description>
 					Nylo is a declarative programming language. The language main's focus is to be easy, simple, very orthogonal, in order to easily do the same work of common languages (hopefully both programming and markup) in a standardized manner. It uses dictionaries/mesh/map as a base construct, and actually looks similiar to lisp, but with mesh.
 				</description>
@@ -20,9 +20,65 @@
 					Please notice the README is outdated, and the final grammar is still a wildcard. There's no standard implementation yet.
 				</annotation>
 				<start_date>
+					<year>2017</year>
+					<month>6</month>
+				</start_date>
+			</project>
+			<project>
+				<name>Sandbox</name>
+				<logo href="sandbox_logo.png"/>
+				<screenshot href="sandbox_screenshot.jpg"/>
+				<github href="https://github.com/veggero/sandbox"/>
+				<video href="https://www.youtube.com/watch?v=bA0HK916Tzc"/>
+				<description>
+					Sandbox is one of the first project I did in python. I learned a lot by making it. It's a uglier and more complex version of scratch, with more possibilities, such as painting on any surface and making function.
+				</description>
+				<start_date>
 					<year>2016</year>
 					<month>6</month>
 				</start_date>
+			</project>
+			<project>
+				<name>Realistic Falcon 9 Lander</name>
+				<screenshot href="rf9l_screenshot.png"/>
+				<scratch href="https://scratch.mit.edu/projects/92169355/"/>
+				<videos>
+					<video href="https://www.youtube.com/watch?v=q5XG6trnAx8"/>
+					<video href="https://www.youtube.com/watch?v=LsJPqOG8xm4"/>
+					<video href="https://www.youtube.com/watch?v=oKG20WQjLt4"/>
+				</videos>
+				<description>
+					The Realisti Falcon 9 Lander is inspired by SpaceX. In this game, you need to land the Falcon 9, doing the boostback burn, the reentry burn, steering, and landing burn.
+				</description>
+				<start_date>
+					<year>2016</year>
+					<month>1</month>
+				</start_date>
+			</project>
+			<project>
+				<name>MarsX</name>
+				<scratch href="https://scratch.mit.edu/projects/105792191/"/>
+				<video href="https://www.youtube.com/watch?v=-hTmrCoYSL8"/>
+				<description>
+					MarsX is a mars colony survival game. You need to manage your resources in order to survive as long as possible, going trought techical difficulties, and by building the facilities you need.
+				</description>
+				<start_date>
+					<year>2016</year>
+					<month>2</month>
+				</start_date>
+			</project>
+			<project>
+				<name>Il piccolo coltivatore di reti neurali</name>
+				<scratch href="https://scratch.mit.edu/projects/154809159/">
+			</project>
+			<project>
+				<name>3DAS</name>
+				<scratch href="https://scratch.mit.edu/projects/62659176/">
+			</project>
+			<project>
+				<name>Zombie Survive</name>
+				<description>This is a quite childish one, but people liked it.</description>
+				<scratch href="https://scratch.mit.edu/projects/22821242/">
 			</project>
 		</programming>
 		<rhymes>
@@ -43,36 +99,161 @@
 					la amo.
 				</text>
 			</rhyme>
+			<rhyme>
+				<annotation>
+					Here I'm doing experiment with strong rhytms.
+				</annotation>
+				<text>
+					e si sente la pelle livida /
+					e in mente la bella vivida  /
+					e ingente storiella rigida /
+					e in gente lamelle di civiltà /
+					svolta via /
+					spera sia /
+					volta via
+				</text>
+				<date>
+					<year>2018</year>
+					<month>9</month>
+					<day>20</day>
+				</date>
+			</rhyme>
+			<rhyme>
+				<annotation>
+					Here I'm still doing experiment with strong rhytms.
+				</annotation>
+				<text>
+					occorre, esce, in fasce nasce, cresce, corre? /
+					si, come metrica siccome medica /
+					per la perla lucende di mente che /
+					bella e pazza della vera rara razza /
+					di rima la stima.
+				</text>
+				<date>
+					<year>2018</year>
+					<month>9</month>
+					<day>17</day>
+				</date>
+			</rhyme>
+			<rhyme>
+				<annotation>
+					I'll eventually stop being that romantic. That day is not the 14th of September.
+				</annotation>
+				<text>
+					un'ora passa e mia massa divora /
+					ogni osso sento spento e percosso /
+					il sonno sbiscia e sfascia il senno /
+					se smosso sclero di nero e di rosso /
+					un'ora passa e ancora astinenza /
+					rigetto pasta, basta, la smetto /
+					poi il freddo, brina, spina sul petto /
+					e tremo, vibro, pigro all'estremo /
+					un'ora passa e rivoglio la droga /
+					il tuo bacio
+				</text>
+				<date>
+					<year>2018</year>
+					<month>9</month>
+					<day>14</day>
+				</date>
+			</rhyme>
+			<rhyme>
+				<annotation>
+					This was a poem to finally end the "vispa teresa" series, officially unrecognizing any crush I previously had.
+				</annotation>
+				<text>
+					La vispa Teresa /
+					felice si sballa /
+					dopo aver presa /
+					la bella farfalla. /
+					Gioca in un prato /
+					nella mia mente /
+					che è ideato /
+					ben di frenquente. /
+					La bella Serena /
+					risale a Natale /
+					da allora fa pena /
+					e quello fa male. /
+					Ma che parco giochi /
+					allegro e vivace! /
+					La sera, i fuochi; /
+					la notte, la brace. /
+					Caterina ha le rughe /
+					ed è prepotente /
+					di lòr sanguisughe /
+					è la peggio pezzente. /
+					I putti sòn fuori /
+					al mio comando /
+					da lì i lòr odori, /
+					si scambian giocando. 
+				</text>
+				<date>
+					<year>2018</year>
+					<month>9</month>
+					<day>10</day>
+				</date>
+			</rhyme>
+			<rhyme>
+				<annotation>
+					My girlfriend referred to my year in Sweden as an "anno sabbatico". A bunch of people said they liked this one. Yay! 
+				</annotation>
+				<text>
+					oh mia cara legge cinquantatré del duemila! /
+					ti adoro e te la lecco, bella Turco Livia! /
+					ne farò uno, due, tre, quattro, tutti di fila! /
+					tanto so che tu sei contro solo per invidia. /
+					A-A-ANNO SABBATICO /
+					PANNO APATICO /
+					DANNO CLIMATICO /
+					SCRANNO GRAMMATICO /
+					VANNO PNEUMATICO /
+					L'anno sabbatico è un periodo non retribuito, /
+					anche se alcuni non l'hanno ancòr capito, /
+					di assenza al termine di quale il richiedente, /
+					se ariano, biondo, alto, bello e ben abbiente, /
+					conserva il diritto a riavér il posto di lavoro /
+					ma di nuove esperienze avendo fatto tesoro. /
+					A-A-ANNO SABBATICO /
+					FANNO MAGMATICO /
+					HANNO PRAGMATICO /
+					RANNO TRAUMATICO /
+					SCANNO CROMATICO /
+					Il datore ha diritto a saperne i motivi /
+					che mi aspetto esser ben creativi /
+					di questa lunga lunga vacanza /
+					coltivando in segreto la speranza /
+					che venga il giorno o il momento /
+					in cui anche lui possa andare, via, con il vento. /
+				</text>
+				<date>
+					<year>2018</year>
+					<month>9</month>
+					<day>8</day>
+				</date>
+			</rhyme>
+			<rhyme>
+				<annotation>
+					DISCLAIMER: this is actually a satirical poem about modern rap: a lot of rhymes but just about sex and drugs. I wanted to put this poem in a bigger poem that made it clear, but I never actually did that. So, here's a very not-like-me explicit poem:
+				</annotation>
+				<text>
+					Mi sfondo 'na lezza ragazza si bionda /
+					al giocondo bel cazzo avezza in profondo /
+					del mondo mio pazza e di razza immonda. /
+					Mie mosse in profonde mie tresche /
+					con rosse (non bionde) tedesche /
+					percosse, feconde e cui pesche /
+					son grosse, rotonde e ben fresche. /
+					Tasto tette troppo finte /
+					a tante tonte tutte tinte!
+				</text>
+				<date>
+					<year>2018</year>
+					<month>9</month>
+					<day>3</day>
+				</date>
+			</rhyme>
 		</rhymes>
 	</projects>
-	<opinions>
-		<annotation>
-			Please notice that opinions might be outdated. I often change my mind, and something I forget to update the informations below. Also, everything that is presented as a fact, unless otherwise specified, is actually just a personal opinion based on personal measurement, that I accidentally forgot to put after the "imo" word. If you find any error, feel free to contact me. 
-		</annotation>
-		<opinion>
-			<topic>Telegram</topic>
-			Telegram has good and bad sides.
-			The good sides are:
-			1) Bot support. That's really, really important to me, because it makes possible to automatize things when I need, and being able to connect to telegram from any platform/operating system that I have. Being able to make bots in something, is a great freedom, imo.
-			2) Client-side almost open source. This is also good, as you can look inside and maybe change something here and there, if you don't like it. It's also highly customizable, touch-optimized on the desktop, and generally works really well.
-			3) Being able to talk to people without revealing your phone number is a big deal.
-			The bad sides are:
-			1) It's not fully open source on the client, and it's not open at all on the servers.
-			2) You can't decentralize it. There's only one centralized instance of telegram.
-			3) Encryption is not end-to-end.
-		</opinion>
-	</opinions>
-	<using>
-		<annotation>
-			These are tools I use.
-		</annotation>
-		<use>
-			<name>Plasma</name>
-			<author>KDE</author>
-			<rate max="10">9</rate>
-			<recommended>true</recommended>
-		</use>
-	</using>
 	<bio>
 		<event>
 			<date>
@@ -92,10 +273,171 @@
 				Taught by my dad and grandpa, I begun writing code in QBASIC. One of my first project has been a text-adventure game.
 			</description>
 		</event>
+		<event>
+			<date><year>2011</year></date>
+			<name>CodeDojo!</name>
+			<description>
+				I joined my local (and another not-so-local one) coderdojo, beginning to learn Scratch. I met Mitchel Resnick there.
+			</description>
+		</event>
+		<event>
+			<date><year>2013</year></date>
+			<name>coderboyblog</name>
+			<description>
+				In this year I started writing a blog about coding, explaining base concepts to children.
+			</description>
+		</event>
+		<event>
+			<date><year>2015</year></date>
+			<name>3DAS</name>
+			<description>
+				 I went to Dublin to show a basic 3D graphics editor in Scratch to an International Coderdojo challenge.
+			</description>
+		</event>
+		<event>
+			<date><year>2016</year></date>
+			<name>MarsX wins third place</name>
+			<description>
+				My project MarsX wins the third place at the Italian Scratch Festival.
+			</description>
+		</event>
+		<event>
+			<date><year>2016</year></date>
+			<name>Sandbox</name>
+			<description>
+				I spend the holidays learning python by writing a graphical interface like scratch, but around python.
+			</description>
+		</event>
+		<event>
+			<date><year>2016</year></date>
+			<name>Neural Network fan</name>
+			<description>
+				I learn neural network by making my own in order to submit it to an ESA challenge. I also create a game that semplifies how neural network works using scratch, for my last Scratch Challenge.
+			</description>
+		</event>
 	</bio>
 	<contacts>
 		<contact href="t.me/veggero">
 			<typename>Telegram</typename>
 		</contact>
+		<contact href="github.com/veggero">
+			<typename>Github</typename>
+		</contact>
 	</contacts>
+	<using>
+		<annotation>
+			These are tools I use. (This is a to-donate list for me)
+		</annotation>
+		<use>
+			<name>Plasma</name>
+			<author>KDE</author>
+			<rate max="10">9</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>Kate</name>
+			<author>KDE</author>
+			<rate max="10">7</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>Falkon</name>
+			<author>KDE</author>
+			<rate max="10">6</rate>
+			<recommended>false</recommended>
+		</use>
+		<use>
+			<name>Arch</name>
+			<author>KDE</author>
+			<rate max="10">8</rate>
+			<recommended>really depends on you</recommended>
+		</use>
+		<use>
+			<name>F-Droid</name>
+			<rate max="10">7</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>KISS Launcher</name>
+			<rate max="10">7</rate>
+			<recommended>really depends on you</recommended>
+		</use>
+		<use>
+			<name>PaperLaunch</name>
+			<rate max="10">9</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>Vanilla Music</name>
+			<rate max="10">7</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>NewPipe</name>
+			<rate max="10">8</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>Habits</name>
+			<rate max="10">7</rate>
+			<recommended>really depends on you</recommended>
+		</use>
+		<use>
+			<name>Termux</name>
+			<rate max="10">6</rate>
+			<recommended>really depends on you</recommended>
+		</use>
+		<use>
+			<name>Keybase</name>
+			<rate max="10">4</rate>
+			<recommended>false</recommended>
+		</use>
+		<use>
+			<name>Material Notes</name>
+			<rate max="10">8</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>k9mail</name>
+			<rate max="10">4</rate>
+			<recommended>false</recommended>
+		</use>
+		<use>
+			<name>vlc</name>
+			<rate max="10">8</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>LibreOffice</name>
+			<rate max="10">5</rate>
+			<recommended>*sigh*</recommended>
+		</use>
+		<use>
+			<name>Vinyl Music Player</name>
+			<rate max="10">8</rate>
+			<recommended>true</recommended>
+		</use>
+		<use>
+			<name>PaperLaunch</name>
+			<rate max="10">9</rate>
+			<recommended>true</recommended>
+		</use>
+	</using>
+	<opinions>
+		<annotation>
+			Please notice that opinions might be outdated. I often change my mind, and something I forget to update the informations below. Also, everything that is presented as a fact, unless otherwise specified, is actually just a personal opinion based on personal measurement, that I accidentally forgot to put after the "imo" word. If you find any error, feel free to contact me. 
+		</annotation>
+		<opinion>
+			<topic>Telegram</topic>
+			Telegram has good and bad sides.
+			The good sides are:
+			1) Bot support. That's really, really important to me, because it makes possible to automatize things when I need, and being able to connect to telegram from any platform/operating system that I have. Being able to make bots in something, is a great freedom, imo.
+			2) Client-side almost open source. This is also good, as you can look inside and maybe change something here and there, if you don't like it. It's also highly customizable, touch-optimized on the desktop, and generally works really well.
+			3) Being able to talk to people without revealing your phone number is a big deal.
+			The bad sides are:
+			1) It's not fully open source on the client, and it's not open at all on the servers.
+			2) You can't decentralize it. There's only one centralized instance of telegram.
+			3) Encryption is not end-to-end.
+		</opinion>
+	</opinions>
 </nerd>
