@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <link rel=stylesheet href=style.css>
+        <title>[veggero@omnya nylo]</title>
+    </head>
+    <body>
+        <center>
+		<a href=index.html>..</a><br>
+		
+		<h1>Nylo</h1>
+
+<span><pre>main:
+
+    color:
+
+        int[-1<<256] r: hex[1:3].base_10
+        int[-1<<256] g: hex[3:5].base_10
+        int[-1<<256] b: hex[5:7].base_10
+
+        str[len=7] hex: '#' & r.base_16 & g.base_16 & b.base_16
+
+        int[-1<<256] grey_shade: [r, g, b].average
+
+    blue: color(hex: '#0000ff')
+    red: color(r: 255, g: 0, b: 0)
+    green: color(hex: '#00ff00')
+
+    color(hex: '#c8ec8e', r+g+b -> summed_color)
+
+    -> print(blue.g, red.hex, green.grey_shade, summed_color)</pre></span>
+
+		<br>
+		
+		<span>
+			<h3>Lambda Functions</h3>
+			<pre>(int -> int + 1)</pre>
+			<pre>(str, int -> str * int)</pre>
+			<pre>(>5) = (obj -> obj>5)</pre>
+			<pre>(2*-1) = (obj -> 2*obj-1)</pre>
+			<pre>(sum/len) = (obj -> sum(obj)/len(obj))</pre>
+		</span>
+		
+		<span>
+			<h3>Functional Programming</h3>
+			<pre>grades: [6, 9, 8, 7, 8, 5],</pre>
+			<pre>ok_grades: filter(grades, >5),</pre>
+			<pre>vg_grades: map(ok_grades, *1.2),</pre>
+			<pre>sm_grades: reduce(vg_grades, sum)</pre>
+		</span>
+		
+		<span>
+			<h3>Flow Control</h3>
+			<pre>if(3>5, print('duh'), print('ok'))</pre>
+			<pre>repeat(5, print('yay'))</pre>
+			<pre>while(input(), print('keep writing:'))</pre>
+		</span>
+		
+		<span>
+			<h3>Types and Conditions</h3>
+			<pre>int a</pre>
+			<pre>list int a</pre>
+			<pre>ptr list int a</pre>
+			<pre>int[>0] a</pre>
+			<pre>list[len=13] int[=0 or =1] a</pre>
+		</span>
+		
+		
+		<br>
+		
+		<span>
+			<h3>Structural Programming</h3>
+			<p>Code is about relations between data.</p>
+			
+			<span>
+				<h3>Structures</h3>
+				<p>Base structure:</p>
+				<pre>point: (int x, int y)</pre>
+				<p>Circular reference structure:</p>
+<pre>number: 
+	int positive: -negative
+	int negative: -positive
+
+c: number(positive: 10).negative,
+d: number(negative: -4).positive</pre>
+
+			<p>Undefined structure:</p>
+			
+<pre>student: 
+	list int grades
+	list int good_grades: filter(grades, >7)
+
+Marco: student([9, 4, 5, 7])</pre>
+
+			</span>
+			
+			<span>
+				<h3>Functions</h3> <span>
+				<p>(structure -> output)</p>
+<pre>fib: 
+	int n
+	-> if(n<2, n, fib(n-1) + fib(n-2))
+
+fib(n: 10)</pre>
+
+				<p>Use just type for small functions</p>
+<pre>fib: 
+	int
+	-> if(int<2, int, fib(int-1) + fib(int-2))
+
+fib(10)</pre>
+</span><span>
+				<p>Divide in small operations</p>
+				
+<pre>fib: 
+	int
+	int prev_fibs: fib(int-1) + fib(int-2)
+	-> if(n<2, n, prev_fibs)
+
+fib(10)</pre>
+
+				<p>Give a name to the output</p>
+				
+<pre>fib: 
+	int,
+	int prev_fibs: fib(int-1) + fib(int-2)
+	int n_fib: if(n<2, n, prev_fibs)
+	-> n_fib
+
+fib(10)</pre></span>
+
+			</span>
+		</span>
+		
+		<br>
+		<a href=nylo2/index.html>more structures theory</a>
+		<br>
+		
+		<span>
+			<h3>Examples</h3>
+<pre>// Project Euler
+// projecteuler.ne
+
+// n. 1
+
+main:
+	list int num_range: 0..1001
+	list int multiple_3: filter(num_range, %3=0)
+	list int multiple_5: filter(num_range, %5=0)
+	list int multiples: filter(num_range, in multiple_3 and in multiple_5)
+	-> sum(multiples)
+
+// n. 2
+
+main: 
+	list int num_range: 0..4000001
+	fun fib: 
+		int
+		int prev_fib: fib(int-1)+fib(int-2)
+		int n_fib: if(int < 2, int, prev_fib)
+		bool is_even: n_fib % 2 = 0
+		-> n_fib
+	list int even_fibs: filter(num_range, int -> fib(int | is_even))
+	-> sum(even_fibs)
+
+
+// n. 3
+
+main:
+	int number: 600851475143
+	number(->divisors)
+	fun is_prime: int -> len(int.divisors) = 0
+	-> filter(divisors, is_prime)
+
+
+// n. 4
+
+main: 
+	fun char_is_pal: (str, int -> str[int] = str[len(str), int])
+	fun is_pal:
+		int pal
+		-> map(0..len(pal.str), (int char_is_pal(pal.str, int)))
+	list int numbers: 999..99
+	-> filter(numbers, is_pal)[0]
+</pre>
+		</span>
+		
+		<span>
+			<h3>Current Grammar</h3>
+<pre># regex elements used
+# ? -> one or zero times
+# + -> at least one time
+# * -> any number of times
+# () -> grouping elementns
+# a-Z -> letters
+# 0-9 -> numbers
+# \( \) -> ( )
+# (.*) -> anything
+
+typedef ::= keyword+
+valuedef ::= typedef: value
+structel ::= typedef | valuedef | value
+struct ::= \((structel(, structel)*)? (-> value)? \)
+
+value ::= num | string | keyword | struct | expr
+value ::= value\(call\) | value[value]
+value ::= /* (.*) */ value | // (.*) \n value
+
+callel ::= value | value -> keyword | keyword <- value
+callel ::= keyword -> | <- keyword | \| value
+call ::= (callel(, callel)*)?
+
+keyword ::= (_a-Z)+(_a-Z0-9)*
+num ::= (0-9)(_0-9)* | ((0-9)(_0-9)*)?.(_0-9)+
+string ::= "(.*)" | '(.*)'
+expr ::= value? symb value? | unary_symb value?
+
+symb ::= = | and | > | or | < | != | xor | >=
+symb ::= >> | <= | << | .. | in | \* | +-
+symb ::= / | ^ | % | , | & | :
+unary_symb ::= \+ | - | not
+
+# symbols priority:
+# :
+# -> <-
+# ,
+# not
+# and or not xor
+# = > < >= <= !=
+# in & .. << >>
+# ^
+# * / %
+# + -
+# +-
+# value[value]
+# .</pre>
+
+		</span>
+		
+		
+        </center>
+    </body>
+</html>

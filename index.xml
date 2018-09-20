@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nerd>
+	<nickname>veggero</nickname>
+	<name>Niccolò Venerandi</name>
+	<age>17</age>
+	<country>Italy</country>
+	<residence>Sweden</residence>
+	<logo href="logo.jpg"/>
+	<prev_website href='.old/index.html'/>
+	<projects>
+		<programming>
+			<project>
+				<name>Nylo</name>
+				<logo href="nylo_logo.png"/>
+				<github>github.com/veggero/nylo</github>
+				<description>
+					Nylo is a declarative programming language. The language main's focus is to be easy, simple, very orthogonal, in order to easily do the same work of common languages (hopefully both programming and markup) in a standardized manner. It uses dictionaries/mesh/map as a base construct, and actually looks similiar to lisp, but with mesh.
+				</description>
+				<annotation>
+					Please notice the README is outdated, and the final grammar is still a wildcard. There's no standard implementation yet.
+				</annotation>
+				<start_date>
+					<year>2016</year>
+					<month>6</month>
+				</start_date>
+			</project>
+		</programming>
+		<rhymes>
+			<rhyme>
+				<date>
+					<year>2018</year>
+					<month>8</month>
+					<day>9</day>
+				</date>
+				<annotation>
+					This is the first poem I wrote after getting engaged. "Promessa da lupetto" is not casual at all, since I got engaged in a boy scout camp. 
+				</annotation>
+				<text>
+					Promessa da lupetto /
+					premessa e sul petto /
+					una croce, puro e /
+					a gran voce, giuro: /
+					la amo.
+				</text>
+			</rhyme>
+		</rhymes>
+	</projects>
+	<opinions>
+		<annotation>
+			Please notice that opinions might be outdated. I often change my mind, and something I forget to update the informations below. Also, everything that is presented as a fact, unless otherwise specified, is actually just a personal opinion based on personal measurement, that I accidentally forgot to put after the "imo" word. If you find any error, feel free to contact me. 
+		</annotation>
+		<opinion>
+			<topic>Telegram</topic>
+			Telegram has good and bad sides.
+			The good sides are:
+			1) Bot support. That's really, really important to me, because it makes possible to automatize things when I need, and being able to connect to telegram from any platform/operating system that I have. Being able to make bots in something, is a great freedom, imo.
+			2) Client-side almost open source. This is also good, as you can look inside and maybe change something here and there, if you don't like it. It's also highly customizable, touch-optimized on the desktop, and generally works really well.
+			3) Being able to talk to people without revealing your phone number is a big deal.
+			The bad sides are:
+			1) It's not fully open source on the client, and it's not open at all on the servers.
+			2) You can't decentralize it. There's only one centralized instance of telegram.
+			3) Encryption is not end-to-end.
+		</opinion>
+	</opinions>
+	<using>
+		<annotation>
+			These are tools I use.
+		</annotation>
+		<use>
+			<name>Plasma</name>
+			<author>KDE</author>
+			<rate max="10">9</rate>
+			<recommended>true</recommended>
+		</use>
+	</using>
+	<bio>
+		<event>
+			<date>
+				<year>2001</year>
+				<month>6</month>
+				<day>7</day>
+			</date>
+			<name>Was born</name>
+			<description>
+				hello world
+			</description>
+		</event>
+		<event>
+			<date><year>2010</year></date>
+			<name>First lines of code</name>
+			<description>
+				Taught by my dad and grandpa, I begun writing code in QBASIC. One of my first project has been a text-adventure game.
+			</description>
+		</event>
+	</bio>
+	<contacts>
+		<contact href="t.me/veggero">
+			<typename>Telegram</typename>
+		</contact>
+	</contacts>
+</nerd>
