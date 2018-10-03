@@ -1,70 +1,86 @@
-
-			body {
-				background-color: #eee;
-				color: #555;
-			}
-			pre {
-				font-family: monospace;
-				background-color: #fff;
-				width: 50.5em;
-				margin: 4em auto;
-				padding: 0.5em;
-				border-radius: .25em;
-				box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.45);
-				line-height: 0;
-				counter-reset: line;
-				animation-name: load;
-				animation-duration: .5s;
-			}
-			pre span {
-				display: block;
-				line-height: 1.5rem;
-			}
-			pre span:before {
-				counter-increment: line;
-				content: counter(line);
-				display: inline-block;
-				border-right: 1px solid #ddd;
-				padding: 0 .5em;
-				margin-right: .5em;
-				width: 1.1em;
-				color: #888;
-			}
-			a{
-				text-decoration: none;
-				color: #558;
-				transition: background-color .5s;
-			}
-			a:hover{
-				text-decoration: none;
-				color: #55e;
-				background-color: #eeeeff;
-				border-radius: 3px;
-			}
-			str{
-				color: #464;
-				background-color: #fafffa;
-				border-radius: 3px;
-				transition: background-color .5s;
-			}
-			str:hover{
-				background-color: #efffef;
-			}
-			num{
-				color: #764;
-				background-color: #fffffa;
-				border-radius: 3px;
-				transition: background-color .5s;
-			}
-			num:hover{
-				background-color: #ffffef;
-			}
-			#logo{
-				width: 100px;
-				border-radius: 51%;
-				margin-top: 2em;
-			}
-			@keyframes load {
-				from {opacity: 0; margin: 6em auto;}
-				to {opacity: 1; margin: 4em auto;}
-			}
+body {
+	background-color: #eee;
+	color: #555;
+}
+pre {
+	font-family: monospace;
+	background-color: #fff;
+	width: 50.5em;
+	margin: 4em auto;
+	padding: 0.5em;
+	border-radius: .25em;
+	box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.45);
+	line-height: 0;
+	counter-reset: line;
+	animation-name: load;
+	animation-duration: .5s;
+}
+pre span {
+	display: block;
+	line-height: 1.5rem;
+}
+pre span:before {	
+	counter-increment: line;
+	content: counter(line);
+	display: inline-block;
+	border-right: 1px solid #ddd;
+	padding: 0 .5em;
+	margin-right: .5em;
+	width: 1.1em;
+	color: #888;
+}
+a{
+	text-decoration: none;
+	color: #558;
+	transition: background-color .5s;
+}
+a:hover{
+	text-decoration: none;
+	color: #55e;
+	background-color: #eeeeff;
+	border-radius: 3px;
+}
+str{
+	color: #464;
+	background-color: #fafffa;
+	border-radius: 3px;
+	transition: background-color .5s;
+}
+str:hover{
+	background-color: #efffef;
+}
+num{
+	color: #764;
+	background-color: #fffffa;
+	border-radius: 3px;
+	transition: background-color .5s;
+}
+num:hover{
+	background-color: #ffffef;
+}
+#logo{
+	width: 100px;
+	border-radius: 51%;
+	margin-top: 2em;
+}
+@keyframes load {
+	from {opacity: 0; margin: 6em auto;}
+	to {opacity: 1; margin: 4em auto;}
+}
+@media only screen and (max-width: 700px) {
+    body {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    pre {
+        width: 90%;
+        margin: 4em auto;
+        padding: 0.5em;
+        border-radius: .25em;
+        box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.45);
+        line-height: 0;
+        counter-reset: line;
+        overflow: scroll;
+    }
+}
