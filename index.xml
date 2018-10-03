@@ -28,7 +28,6 @@
 				<name>Sandbox</name>
 				<logo href="sandbox_logo.png"/>
 				<screenshot href="sandbox_screenshot.jpg"/>
-				<github href="https://github.com/veggero/sandbox"/>
 				<video href="https://www.youtube.com/watch?v=bA0HK916Tzc"/>
 				<description>
 					Sandbox is one of the first project I did in python. I learned a lot by making it. It's a uglier and more complex version of scratch, with more possibilities, such as painting on any surface and making function.
