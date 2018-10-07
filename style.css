@@ -56,7 +56,16 @@ num{
 	transition: background-color .5s;
 }
 num:hover{
-	background-color: #ffffef;
+	background-color: #efffff;
+}
+op{
+	color: #467;
+	background-color: #faffff;
+	border-radius: 3px;
+	transition: background-color .5s;
+}
+op:hover{
+	background-color: #efffff;
 }
 #logo{
 	width: 100px;
