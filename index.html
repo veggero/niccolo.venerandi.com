@@ -11,6 +11,7 @@
 		<center><img src="logo.jpg" id="logo"></center>
 		<pre>
 		<span>veggero: nerd(</span>
+		<span>	countdown: <k id="cd">"broken"</k></span>
 		<span>	bio: (</span>
 		<span>		nickname: <str>"veggero"</str></span>
 		<span>		age: <num>17</num></span>
@@ -38,5 +39,17 @@
 		<span>	)</span>
 		<span>)</span>
 		</pre>
+		
+	<!-- I love you -->
+	<script>
+		function updateCountdown() {
+			var d = new Date();
+			var back = new Date(2018, 12, 21, 2)
+			var count = Math.round((back - d) / 1000)
+			document.getElementById('cd').innerHTML = count
+		}
+		window.setInterval(updateCountdown, 1000)
+	</script>
+		
 	</body>
 </html>
